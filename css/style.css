@@ -8,6 +8,10 @@ body{
 	margin: 0 auto;
 }
 
+.visually-hidden{
+	display: none;
+}
+
 
 /*=============================================================
 шапка
@@ -19,6 +23,7 @@ body{
 	min-height: 854px;
 	background-color: #1a1a1a;
 	background-image: url("../img/bg-header.jpg");
+	background-repeat: no-repeat;
 	background-position-x: -60px;
 }
 
@@ -117,5 +122,290 @@ body{
 =============================================================*/
 
 /*=============================================================
-блок плиток
+секция плиток
 =============================================================*/
+
+.tiles{
+	padding: 0;
+	padding-top: 83px;
+	background-color: #ffffff;
+}
+
+.tiles a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.tiles a:hover span{
+	color: #f84545;
+}
+
+.top-tiles{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 53px;
+}
+
+.main-tile{
+	position: relative;
+	width: 982px;
+	height: 776px;
+	background-color: #57554a;
+	background-image: url("../img/bg-gourmet.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.main-tile span{
+	position: absolute;
+	bottom: 46px;
+	left: 55px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 60px;
+	line-height: 70px;
+	text-transform: uppercase;
+	letter-spacing: 18px;
+	color: #ffffff;
+}
+
+.main-tile span:before{
+	position: absolute;
+	content: "";
+	width: 195px;
+	height: 191px;
+	top: -214px;
+	left: 0;
+	background-image: url("../img/logo-gourmet.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.tail-top-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.top-tiles .tile-item{
+	width: 462px;
+	height: 360px;
+}
+
+.bottom-tile .tile-item{
+	width: 462px;
+	height: 580px;
+}
+
+.tile-item{
+	position: relative;
+	background-color: #57554a;
+}
+
+.tile-item span{
+	position: absolute;
+	width: 345px;
+	bottom: 32px;
+	left: 37px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 40px;
+	line-height: 45px;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	color: #ffffff;
+}
+
+.shop-carhartt{
+	/*position: relative;*/
+	background-image: url("../img/bg-carhartt.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.shop-carhartt span:before{
+	position: absolute;
+	content: "";
+	top: -123px;
+	left: 0;
+	width: 81px;
+	height: 96px;
+	background-image: url("../img/logo-carhartt.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.shop-adidas{
+	background-image: url("../img/bg-adidas.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.shop-adidas span:before{
+	position: absolute;
+	content: "";
+	top: -123px;
+	left: 0;
+	width: 140px;
+	height: 96px;
+	background-image: url("../img/logo-adidas.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.bottom-tile{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 82px;
+}
+
+.deep-sale{
+	background-image: url("../img/bg-deepsale.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.deep-sale span:before{
+	position: absolute;
+	content: "";
+	top: -94px;
+	left: 0;
+	width: 275px;
+	height: 68px;
+	background-image: url("../img/logo-10deep.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.palace-2014{
+	background-image: url("../img/bg-palace.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.palace-2014 span:before{
+	position: absolute;
+	content: "";
+	top: -121px;
+	left: 0;
+	width: 110px;
+	height: 95px;
+	background-image: url("../img/logo-palace.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.tech-pack{
+	background-image: url("../img/bg-nike.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.tech-pack span:before{
+	position: absolute;
+	content: "";
+	top: -123px;
+	left: 0;
+	width: 183px;
+	height: 97px;
+	background-image: url("../img/logo-nike.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
+/*=============================================================
+секция интаграм
+=============================================================*/
+
+.section-instagram{
+	margin-bottom: 31px;
+	padding-top: 353px;
+	height: 497px;
+	background: url("../img/bg-instagram.jpg");
+	background-repeat: no-repeat;
+	background-position-x: -60px;
+}
+
+.instagram-label{
+	text-align: center;
+}
+
+/*=============================================================
+секция подвала
+=============================================================*/
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	/*padding-top: 65px;*/
+	padding-bottom: 65px;
+}
+
+.footer-menu{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	margin-top: 25px;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-menu a{
+	display: inline-block;
+	margin-right: 56px;
+	/*margin-bottom: 290px;*/
+	/*margin-top: 77px;*/
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	color: #000000;
+}
+
+.footer-menu a:hover,
+.footer-menu a:active{
+	color: #f84545;
+}
+
+.social-menu{
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	margin-top: 25px;
+	padding: 0;
+	list-style: none;
+}
+
+.social-item{
+	display: inline-block;
+	font-size: 0;
+	margin-left: 39px;
+	vertical-align: middle;
+}
+
+.social-ig{
+	width: 26px;
+	height: 26px;
+	background-image: url("../img/icon-ig.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.social-fb{
+	width: 15px;
+	height: 29px;
+	background-image: url("../img/icon-fb.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.social-tw{
+	width: 27px;
+	height: 22px;
+	background-image: url("../img/icon-tw.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
